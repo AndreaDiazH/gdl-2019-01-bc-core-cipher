@@ -6,9 +6,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+  
     <div id="root">
-      <h1>Hola mundo!</h1>
+        <h1>Nombre del producto</h1>
+        <p><textarea name="origen" rows="5" cols="50">Escribe aquí tu texto: </textarea></p>
+        <button>Continuar</button>
     </div>
+
+    <div id="screen1">
+        <p>Escribe un numero-clave entre 1 y 100 para codificar ó descondificar</p>
+        <p><input type="number" min= 1 max= 100 name="clave"/></p>
+        <p>(no olvides guardar tu numero)</p>
+        <button>Codificar</button> <button>Decodificar</button>
+    </div>
+    
+    <div id="screen2">
+        <p>Resultado:<textarea name="result"></textarea></p>
+        <p>Texto original:<textarea name="origen"></textarea></p>
+        <button>Volver al inicio</button>
+    </div>
+    
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
