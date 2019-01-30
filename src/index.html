@@ -9,22 +9,22 @@
   
     <div id="root">
         <h1>Nombre del producto</h1>
-        <h3>Escriba aquì su texto:</h3>
+        <h3>Escriba aquí su texto:</h3>
         <p><textarea id= "entry" name="origen" rows="5" cols="50"></textarea></p>
         <button onclick = "getText()">Continuar</button>
     </div>
 
-    <div id="screen1">
-        <p>Escribe un numero-clave entre 1 y 100 para codificar ó descondificar</p>
-        <p><input type="number" min= 1 max= 100 name="clave"/></p>
-        <p>(no olvides guardar tu numero)</p>
-        <button>Codificar</button> <button>Decodificar</button>
+    <div id="screen1" style= "display:none;">
+        <p>Escribe un número-clave entre 1 y 100 para codificar ó descondificar</p>
+        <p><input id = "key" type="number" min= 1 max= 100 name="clave"/></p>
+        <p>(no olvides guardar tu número)</p>
+        <button onclick= "getKey()">Codificar</button> <button onclick= "getKey()">Decodificar</button>
     </div>
     
-    <div id="screen2">
-        <p>Resultado:<textarea name="result"></textarea></p>
-        <p>Texto original:<t extarea name="origen"></textarea></p>
-        <button>Volver al inicio</button>
+    <div id="screen2" style= "display:none;">
+        <p>Resultado:<textarea id="out" name="result"></textarea></p>
+        <p>Texto original:<textarea id="origin" name="origen"></textarea></p>
+        <button onclick="doAgain()">Volver al inicio</button>
     </div>
     
     <script src="cipher.js"></script>
