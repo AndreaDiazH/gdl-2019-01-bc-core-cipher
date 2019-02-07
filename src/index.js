@@ -1,14 +1,21 @@
-let text;
+//document.getElementById("id nuevo en boton").addEventListener("click","function enconde");
+//document.getElementById("id nuevo en boton").addEventListener("click","function decode");
+//document.getElementById("keepText").addEventListener("click","function getText");
+//document.getElementById("id nuevo en boton").addEventListener("click","function getKey");
+//document.getElementById("id nuevo en boton").addEventListener("click","function doAgain");
+
+
+let text; 
 
 function getText() {
     text = document.getElementById("entry").value.toUpperCase();
     document.getElementById("root").style.display = "none";
     document.getElementById("screen1").style.display = "block";
     console.log("el texto recibido es " + text);
+    return text;
 }
 
-//document.getElementById("id nuevo en boton").addEventListener("click","function enconde);
-//document.getElementById("id nuevo en boton").addEventListener("click","function decode);
+
 
 function getKey(magic) {
     let number = document.getElementById("key").value;
@@ -33,5 +40,4 @@ function doAgain(){
     document.getElementById("entry").value = "";
     document.getElementById("screen2").style.display = "none";
     document.getElementById("root").style.display = "block";
-
 }
