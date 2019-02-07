@@ -10,8 +10,8 @@ encode : function (text,number){
     console.log(knowPo + ' ' + text.charAt(i));
     let addNumber = ((knowPo - 65) + number)%26 + 65;// puede ser addNumber
     console.log(addNumber); //esto solo lo necesito yo en realidad
-    let changeLe = String.fromCharCode(addNumber); 
-    result += changeLe; //esto combierte el resultado numerico de addnumber a letra y puede llamarse changeLe
+    let changeLe = String.fromCharCode(addNumber); //esto convierte el resultado numerico de addnumber a letra y puede llamarse changeLe
+    result += changeLe; 
   }
   return result; //aqui le estoy diciendo que me devuelva la letra(s) que cambio
 },
@@ -25,8 +25,8 @@ decode : function (text,number){
     console.log(knowPo + ' ' + text.charAt(i));
     let addNumber = ((knowPo - 65) - number)%26 + 65;// puede ser addNumber
     console.log(addNumber); //esto solo lo necesito yo en realidad
-    let changeLe = String.fromCharCode(addNumber); 
-    result += changeLe; //esto combierte el resultado numerico de addnumber a letra y puede llamarse changeLe
+    let changeLe = String.fromCharCode(addNumber); //esto convierte el resultado numerico de addnumber a letra y puede llamarse changeLe
+    result += changeLe; 
   }
   return result; //aqui le estoy diciendo que me devuelva la letra(s) que cambio
 }

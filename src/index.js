@@ -7,6 +7,9 @@ function getText() {
     console.log("el texto recibido es " + text);
 }
 
+//document.getElementById("id nuevo en boton").addEventListener("click","function enconde);
+//document.getElementById("id nuevo en boton").addEventListener("click","function decode);
+
 function getKey(magic) {
     let number = document.getElementById("key").value;
     let result;  //=cipher.encode(text,parseInt(number));

@@ -2,15 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+  <center>
   
     <div id="root">
         <h1>Nombre del producto</h1>
         <h3>Escriba aquí su texto:</h3>
-        <p><textarea id= "entry" name="origen" rows="5" cols="50"></textarea></p>
+        <p><textarea id= "entry" name="origen" rows="5" cols="30"></textarea></p>
         <button onclick = "getText()">Continuar</button>
     </div>
 
@@ -22,11 +24,13 @@
     </div>
     
     <div id="screen2" style= "display:none;">
-        <p>Resultado:<textarea id="out" name="result"></textarea></p>
-        <p>Texto original:<textarea id="origin" name="origen"></textarea></p>
-        <button onclick="doAgain()">Volver al inicio</button>
+        <p>Resultado:</p><textarea id="out" name="result" rows="5" cols="30"></textarea>
+        <p>Texto original:</p><textarea id="origin" name="origen" rows="5" cols="30"></textarea>
+        <br>
+        <button class= "exit" onclick="doAgain()">Volver al inicio</button>
+        
     </div>
-    
+    </center>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

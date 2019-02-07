@@ -1,0 +1,68 @@
+/**, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+*/
+body {
+
+  background-image: url("https://pilotzinoticias.com/wp-content/uploads/2018/08/Galaxia-Espacio-Universo-Estrellas-2.png");
+  opacity: 0.6%
+  width:1360px;
+  height: 580px;
+}
+
+p, h1, h3 { 
+  color: #532d2d;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+   
+  border: none;
+  color: #592626;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+div {
+ /* max-width: 50%; */   
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+#root {
+  
+  text-align: center;
+  opacity: 0.9;
+  margin: 5%;
+  border-radius: 25px;
+  background-color: rgb(255, 245, 204, 0.6); 
+  
+}
+
+#screen1 {
+  text-align: center;
+  background-color: rgb(255, 245, 204, 0.6);
+  opacity: 0.9;
+  margin: 5%;
+  border-radius: 25px;
+  
+}
+
+#screen2 {
+  text-align: center;
+  background-color: rgb(255, 245, 204, 0.6);
+  opacity: 0.9;
+  margin: 5%;
+  border-radius: 25px;
+  
+}
+
+.exit {
+  margin-top: 25px;
+}
