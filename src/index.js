@@ -11,8 +11,7 @@ function getText() {
     text = document.getElementById("entry").value.toUpperCase();
     document.getElementById("root").style.display = "none";
     document.getElementById("screen1").style.display = "block";
-    console.log("el texto recibido es " + text);
-    return text;
+    console.log("el texto recibido es " + text); //solo lo utilizo para saber que la funcion esta obteniendo el valor//
 }
 
 
@@ -29,7 +28,7 @@ function getKey(magic) {
     
     document.getElementById("screen1").style.display ="none";
     document.getElementById("screen2").style.display ="block";
-    console.log("el numero clave es " + number); 
+    console.log("el numero clave es " + number); //solo lo utilizo para saber que la funcion esta obteniendo el valor//
     document.getElementById("out").value = result;
     document.getElementById("origin").value = text; 
     
@@ -40,4 +39,5 @@ function doAgain(){
     document.getElementById("entry").value = "";
     document.getElementById("screen2").style.display = "none";
     document.getElementById("root").style.display = "block";
+    //esta funcion solo me limpia los textarea y el input numerico y me devuelve a la pantalla inicio//
 }
