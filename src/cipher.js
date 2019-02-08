@@ -1,7 +1,7 @@
 window.cipher = {
   // ... 
  
-encode : function (text,number){
+encode : function (number,text){
   
   let result = ''; 
     
@@ -16,7 +16,7 @@ encode : function (text,number){
   return result; //aqui le estoy diciendo que me devuelva la letra(s) que cambio
 },
 
-decode : function (text,number){
+decode : function (number,text){
   
   let result = ''; 
     

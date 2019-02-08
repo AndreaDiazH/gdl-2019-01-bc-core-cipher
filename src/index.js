@@ -1,9 +1,9 @@
-//document.getElementById("id nuevo en boton").addEventListener("click","function enconde");
-//document.getElementById("id nuevo en boton").addEventListener("click","function decode");
-//document.getElementById("keepText").addEventListener("click","function getText");
-//document.getElementById("id nuevo en boton").addEventListener("click","function getKey");
-//document.getElementById("id nuevo en boton").addEventListener("click","function doAgain");
 
+document.getElementById("keepText").addEventListener("click",getText);
+document.getElementById("code1").addEventListener("click",function(){getKey(1);});
+document.getElementById("code2").addEventListener("click",function(){getKey(2);});
+document.getElementById("goBack").addEventListener("click", doAgain);
+//element.addEventListener("click", function(){ alert("Hello World!"); });
 
 let text; 
 
@@ -20,10 +20,10 @@ function getKey(magic) {
     let number = document.getElementById("key").value;
     let result;  //=cipher.encode(text,parseInt(number));
     if(magic === 1){
-      result = cipher.encode(text,parseInt(number));
+      result = cipher.encode(parseInt(number),text);
     }
     else {
-      result = cipher.decode(text,parseInt(number));
+      result = cipher.decode(parseInt(number),text);
     }  
     
     document.getElementById("screen1").style.display ="none";

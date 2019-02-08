@@ -18,21 +18,21 @@
         <p>Y estos permanezcan seguros antes de su lanzamiento público</p>
         <h3 class="indicate">Escriba aquí su texto:</h3>
         <p><textarea id= "entry" name="origen" rows="5" cols="30"></textarea></p>
-        <button onclick = "getText()">Continuar <i class="fas fa-angle-double-right"></i></button>
+        <button id= "keepText" >Continuar <i class="fas fa-angle-double-right"></i></button> <!-- onclick = "getText()" -->
     </div>
 
     <div id="screen1" style= "display:none;">
         <p>Escribe un número-clave entre 1 y 100 para codificar ó descondificar</p>
-        <p><input id = "key" type="number" min= 1 max= 100 name="clave"/></p>
+        <p><input id = "key" type="number" min= "1" max= "100" name="clave"/></p>
         <p class="indicate">(no olvides guardar tu número, te servira para compartir tu texto y que pueda ser decodificado)</p>
-        <button onclick= "getKey(1)"><i class="fas fa-lock"></i> Codificar</button> <button onclick= "getKey(2)"><i class="fas fa-unlock-alt"></i> Decodificar</button>
+        <button id= "code1"><i class="fas fa-lock"></i> Codificar</button> <button id= "code2"><i class="fas fa-unlock-alt"></i> Decodificar</button>
     </div>
     
     <div id="screen2" style= "display:none;">
         <p>Resultado:</p><textarea id="out" name="result" rows="5" cols="30"></textarea>
         <p>Texto original:</p><textarea disabled id="origin" name="origen" rows="5" cols="30"></textarea>
         <br>
-        <button class= "exit" onclick="doAgain()">Volver al inicio <i class="fas fa-star"></i></button>
+        <button class= "exit" id= "goBack">Volver al inicio <i class="fas fa-star"></i></button>
     </div>
     
     </center>
