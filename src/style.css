@@ -1,7 +1,7 @@
 
 body {
 
-  background-image: url("/home/andreanibaldi/Laboratoria/gdl-2019-01-bc-core-cipher/src/images/bnw.JPG");
+  background-image: url("./images/bnw.JPG"); /*ruta relativa de la carpeta '.' busca el archivo*/
   opacity: 0.6%
   width:1360px;
   height: 580px;
